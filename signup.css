@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 1.5em;
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.container>h3{
+    font-size: 3em;
+    font-family: sans-serif;
+    color: green;
+}
+.container>span{
+    margin-top: 0.8em;
+    font-size: 1.4em;
+}
+.container>input{
+    padding: 0.6em;
+    border-radius: 0.7em;
+    width: 40em;
+}
+.two-btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+}
+.two-btns>button{
+    background-color: rgb(2, 215, 2);
+    border: none;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 0.8em;
+    font-size: 1.5em;
+    color: #fff;
+}
+.two-btns>button>a{
+    color: #fff;
+    text-decoration: none;
+}
