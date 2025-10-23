@@ -27,6 +27,7 @@ body{
     color: green;
     font-size: 2em;
     font: 700;
+    text-align: center;
 }
 .container>span>input{
     padding: 0.6em;
