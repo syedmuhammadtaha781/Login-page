@@ -34,8 +34,8 @@ link.addEventListener("click", ()=>{
     userclass.value = "";
     email.value = "";
     password.value = "";
-
-
+    
+    
         if(islogin) {
             head.textContent = "Create Your Account";
             s1.style.display = "flex";
@@ -68,8 +68,8 @@ link.addEventListener("click", ()=>{
         let trim_class = userclass.value.trim();
         let trim_email = email.value.trim();
         let trim_pass = password.value.trim();
-
-if (btn.textContent == "Signup") {
+    
+    if (btn.textContent == "Signup") {
     if (trim_name == "" || trim_fathername == "" || trim_class == "" || trim_email == "" || trim_pass == "") {
         alert("Please fill the required fields");
         return;
@@ -86,10 +86,10 @@ if (btn.textContent == "Signup") {
     password.value = "";
     alert("Account created Successfully");
     
-} else if(btn.textContent == "Login"){
+    } else if(btn.textContent == "Login"){
     let main = document.querySelector(".container")
     let welcome = document.querySelector(".welcome")
- 
+    
          let n = localStorage.getItem("Name");
          let a = localStorage.getItem("Email");
          let b = localStorage.getItem("Password");
@@ -105,9 +105,7 @@ if (btn.textContent == "Signup") {
              welcome.textContent = "Welcome " + n;
             welcome.style.fontSize = "48px";
             welcome.style.fontWeight = "800";
-
-         }
-         
     
+         }
     }
-})
+    })
