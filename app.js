@@ -60,9 +60,6 @@ btn.addEventListener("click", () => {
     let trim_email = email.value.trim();
     let trim_pass = password.value.trim();
 
-    console.log(trim_email);
-    console.log(email);
-
     if (btn.textContent === "Signup") {
         if (trim_name == "" || trim_fathername == "" || trim_class == "" || trim_email == "" || trim_pass == "") {
             alert("Please fill the requires fields")
@@ -70,7 +67,7 @@ btn.addEventListener("click", () => {
         }
 
         const users = localStorage.getItem("users") || [];
-        console.log(users, "usersusersusers");
+        console.log(users);
 
         let storageData = users.length > 0 ? JSON.parse(users) : [];
         const myData = { trim_name, trim_email, trim_pass };
@@ -95,10 +92,9 @@ btn.addEventListener("click", () => {
             return;
         }
         let logindata = JSON.parse(localStorage.getItem("users"));
-        console.log(logindata);
-        let loginemail = logindata.find((element) => element.trim_email === trim_email);
-        let loginpass = logindata.find((element) => element.trim_pass === trim_pass);
-        if (loginemail && loginpass) {
+        let logindetails = logindata.find((element) => element.trim_email === trim_email);
+        
+        if (logindetails && logindetails.trim_pass) {
             alert("Login Successfully");
             let main = document.querySelector(".container");
             let welcome = document.querySelector(".welcome");
@@ -107,9 +103,10 @@ btn.addEventListener("click", () => {
                     password.value = "";
                     main.style.display = "none";
                     welcome.style.display = "block";
-                    welcome.textContent = "Welcome";
+                    welcome.textContent = "Welcome " + logindetails.trim_name + "!";
                    welcome.style.fontSize = "48px";
                    welcome.style.fontWeight = "800";   
+                   welcome.style.textAlign = "center";   
             
         }else{
             alert("Incorrect Information")
