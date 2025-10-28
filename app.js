@@ -67,12 +67,10 @@ btn.addEventListener("click", () => {
         }
 
         const users = localStorage.getItem("users") || [];
-        console.log(users);
 
         let storageData = users.length > 0 ? JSON.parse(users) : [];
         const myData = { trim_name, trim_email, trim_pass };
         const found = storageData.find((element) => element.trim_email === trim_email);
-        console.log(found, "found");
         if (found) {
             alert("Email Already Exist");
             return;
@@ -113,5 +111,4 @@ btn.addEventListener("click", () => {
         }
     }
 })
-
 
