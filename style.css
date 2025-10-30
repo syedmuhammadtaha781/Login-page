@@ -20,6 +20,7 @@ body{
 .container>h1{
     color: green;
     margin-bottom: 1em;
+    text-align: center;
 }
 .container>input{
     margin-bottom: 1em;
@@ -39,6 +40,7 @@ body{
 }
 #Signupform{
     display: none;
+    text-align: center;
 }
 #UserPage{
     display: none;
@@ -53,4 +55,25 @@ body{
     border-radius: 0.3em;
     padding: 0.8em;
     font-size: 1em;
+}
+@media (max-width:400px) {
+    
+    #w-name{
+        justify-content: center;
+        align-items: center;
+        font-size: 0.5em;
+        font-weight: 500;
+    }
+    
+    #w-name-2{
+        font-size: 0.5em;
+        font-weight: 800;
+    }
+    #w-name-1{
+        text-align: center;
+    }
+    #Logout-btn{
+        font-size: 0.8em;
+        margin-top: 0.8em;
+    }
 }

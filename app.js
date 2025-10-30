@@ -122,6 +122,7 @@ window.addEventListener("load",()=>{
     let alreadylogin_name = localStorage.getItem("isloggedin_name");
    if (alreadylogin) {
        U_page.style.display = "flex";
+       U_page.style.alignItems = "center";
        L_Form.style.display = "none";
        S_Form.style.display = "none";
        U_page.style.flexDirection = "column";
