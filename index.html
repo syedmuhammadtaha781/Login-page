@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Account</title>
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login Your Account</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="container">
-        <h3 id="heading">Login Your Account</h3>
-        <span id="span1">Name:
-        <input type="text" id="name"></span>
-        <span id="span2">Father Name:
-        <input type="text" id="Fathername"></span>
-        <span id="span3">Class:
-        <input type="text" id="class"></span>
-        <span id="span4">Email:
-        <input type="email" id="email"></span>
-        <span id="span5">Password:
-        <input type="password" id="password"></span>
-        <a href="#javascript:void(0)"  id="link">I don't have any account</a>
-        <button id="btn">Login</button>
-     </div>
-     <div class="welcome">
-        Welcome
-     </div>
+   <div class="container" id="Loginform">
+      <h1>Login Your Account</h1>
+      Email: <input type="email" name="" id="L-email" placeholder="Enter Your Email">
+      Password: <input type="password" id="L-pass" placeholder="Enter Your Password">
+      <a href="#javasript:void(0)" id="L-link">I don't have any Account</a>
+      <button id="L-btn">Login</button>
+   </div>
+    <div class="container" id="Signupform">
+      <h1>Create Your Account</h1>
+      Name:<input type="text" placeholder="Enter Your Name" id="S-name">
+      Father Name:<input type="text" placeholder="Enter Your Father Name" id="S-f-name">
+      Class: <input type="text" placeholder="Enter Your Class" id="S-class">
+      Email: <input type="email" name="" id="S-email" placeholder="Enter Your Email" >
+      Password: <input type="password" placeholder="Enter Your Password" id="S-pass">
+      <a href="#javasript:void(0)" id="S-link">I already have an Account</a>
+      <button id="S-btn">Signup</button>
+   </div>
+   <div id="UserPage" >
+      <span id="w-name-1">Welcome, <span id="w-name"></span></span>
+      <button id="Logout-btn">Logout</button>
+   </div> 
 </body>
 <script src="app.js"></script>
 </html>
