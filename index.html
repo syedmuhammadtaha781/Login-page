@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Login Your Account</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
    <div class="container" id="Loginform">
@@ -20,12 +21,24 @@
       Father Name:<input type="text" placeholder="Enter Your Father Name" id="S-f-name">
       Class: <input type="text" placeholder="Enter Your Class" id="S-class">
       Email: <input type="email" name="" id="S-email" placeholder="Enter Your Email" >
-      Password: <input type="password" placeholder="Enter Your Password" id="S-pass">
+      Password: <input type="password" placeholder="Enter Your Password" id="S-pass"><i id="eye" class="fa-solid fa-eye"></i>
+      <!-- <i id="eye-slash" class="fa-solid fa-eye-slash"></i> -->
       <a href="#javasript:void(0)" id="S-link">I already have an Account</a>
       <button id="S-btn">Signup</button>
    </div>
    <div id="UserPage" >
       <span id="w-name-1"><span id="w-name-2">Welcome, </span><span id="w-name"></span></span>
+      <div class="todolist">
+         <h3>To-do List</h3>
+            <div class="inner">
+            <input type="text" id="TD-input">
+            <button id="add" type="button">Add</button>
+            <div id="addin">
+      
+            </div>
+         </div>
+      </div>
+
       <button id="Logout-btn">Logout</button>
    </div> 
 </body>

@@ -41,6 +41,7 @@ body{
 #Signupform{
     display: none;
     text-align: center;
+    position: relative;
 }
 #UserPage{
     display: none;
@@ -48,13 +49,59 @@ body{
 #w-name{
     color: blue;
 }
+#w-name-1{
+    text-align: center;
+}
 #Logout-btn{
-    background-color: green;
+    background-color: blue;
     color: #fff;
     border: none;
     border-radius: 0.3em;
     padding: 0.8em;
     font-size: 1em;
+}
+#Logout-btn{
+    margin-top: 2em;
+}
+.todolist{
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2em;
+}
+.todolist>h3{
+    margin-bottom: 1em;
+}
+.inner>input{
+    width: 15em;
+    padding: 0.4em;
+}
+.inner>button{
+    padding: 0.6em;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 0.4em;
+}
+#UserPage{
+    background-color: green;
+    height: 100%;
+    width: 100%;
+}
+#eye-slash{
+    display: none;
+    position: absolute;
+    top: 402px;
+    right: 90px;
+}
+#eye{
+    position: absolute;
+    top: 402px;
+    right: 90px;
+
 }
 @media (max-width:400px) {
     
@@ -74,6 +121,6 @@ body{
     }
     #Logout-btn{
         font-size: 0.8em;
-        margin-top: 0.8em;
+        margin-top: 2em;
     }
 }
