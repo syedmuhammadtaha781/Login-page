@@ -43,6 +43,10 @@ body{
     text-align: center;
     position: relative;
 }
+#Loginform{
+    position: relative;
+
+}
 #UserPage{
     display: none;
 }
@@ -97,11 +101,15 @@ body{
     top: 402px;
     right: 90px;
 }
-#eye{
+#eyeL{
+    position: absolute;
+    top: 187px;
+    right: 82px;
+}
+#eyeS{
     position: absolute;
     top: 402px;
-    right: 90px;
-
+    right: 86px;
 }
 @media (max-width:400px) {
     

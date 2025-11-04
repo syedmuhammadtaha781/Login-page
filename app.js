@@ -34,22 +34,31 @@ L_link.addEventListener("click", () => {
     S_Form.style.display = "flex";
 });
 let pass_dis = true;
-let eye = document.getElementById("eye");
-// let eye_slash = document.getElementById("eye-slash");
-eye.addEventListener("click",()=>{
-    if (pass_dis) {
-      eye.setAttribute("class","fa-solid fa-eye-slash");
-      S_pass.setAttribute("type","password");
-      pass_dis = false;
-      
-    }else if(!pass_dis){
-      S_pass.setAttribute("type","text");
-      eye.setAttribute("class","fa-solid fa-eye")
-      eye.style.display = "block";
-      pass_dis = true;
-    }
-
+let eyeS = document.getElementById("eyeS");
+eyeS.addEventListener("click",()=>{
+  if (pass_dis) {
+    pass_dis = false;
+    eyeS.setAttribute("class","fa-solid fa-eye-slash");
+    S_pass.setAttribute("type","text");
+  } else if(!pass_dis) {
+    pass_dis = true;
+    eyeS.setAttribute("class","fa-solid fa-eye");
+    S_pass.setAttribute("type","password");
+  }
 })
+let eyeL = document.getElementById("eyeL");
+eyeL.addEventListener("click",()=>{
+  if (pass_dis) {
+    pass_dis = false;
+    eyeL.setAttribute("class","fa-solid fa-eye-slash");
+    L_pass.setAttribute("type","text");
+  } else if(!pass_dis) {
+    pass_dis = true;
+    eyeL.setAttribute("class","fa-solid fa-eye");
+    L_pass.setAttribute("type","password");
+  }
+})
+
 S_link.addEventListener("click", () => {
   S_Form.style.display = "none";
   L_Form.style.display = "flex";
@@ -175,6 +184,7 @@ function loadTasks() {
 
   list_array.forEach((task) => {
     createTaskElement(task);
+    
   });
 }
 
