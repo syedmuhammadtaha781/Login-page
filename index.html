@@ -10,38 +10,41 @@
 <body>
    <div class="container" id="Loginform">
       <h1>Login Your Account</h1>
-      Email: <input type="email" name="" id="L-email" placeholder="Enter Your Email">
-      Password: <input type="password" id="L-pass" placeholder="Enter Your Password">
-      <i id="eyeL" class="fa-solid fa-eye"></i>
+      Email: <input type="email" id="L-email" placeholder="Enter Your Email">
+      <div class="pass-field">
+         <input type="password" id="L-pass" placeholder="Enter Your Password">
+         <i id="eyeL" class="fa-solid fa-eye"></i>
+      </div>
       <a href="#javasript:void(0)" id="L-link">I don't have any Account</a>
       <button id="L-btn">Login</button>
    </div>
-    <div class="container" id="Signupform">
+
+   <div class="container" id="Signupform">
       <h1>Create Your Account</h1>
       Name:<input type="text" placeholder="Enter Your Name" id="S-name">
       Father Name:<input type="text" placeholder="Enter Your Father Name" id="S-f-name">
       Class: <input type="text" placeholder="Enter Your Class" id="S-class">
-      Email: <input type="email" name="" id="S-email" placeholder="Enter Your Email" >
-      Password: <input type="password" placeholder="Enter Your Password" id="S-pass"></i>
-      <i id="eyeS" class="fa-solid fa-eye"></i>
+      Email: <input type="email" id="S-email" placeholder="Enter Your Email">
+      <div class="pass-field">
+         <input type="password" placeholder="Enter Your Password" id="S-pass">
+         <i id="eyeS" class="fa-solid fa-eye"></i>
+      </div>
       <a href="#javasript:void(0)" id="S-link">I already have an Account</a>
       <button id="S-btn">Signup</button>
    </div>
-   <div id="UserPage" >
+
+   <div id="UserPage">
       <span id="w-name-1"><span id="w-name-2">Welcome, </span><span id="w-name"></span></span>
       <div class="todolist">
          <h3>To-do List</h3>
-            <div class="inner">
+         <div class="inner">
             <input type="text" id="TD-input">
-            <button id="add" type="button" placeholder="Enter task">Add</button>
-            <div id="addin">
-      
-            </div>
+            <button id="add" type="button">Add</button>
+            <div id="addin"></div>
          </div>
       </div>
-
       <button id="Logout-btn">Logout</button>
-   </div> 
+   </div>
+   <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
